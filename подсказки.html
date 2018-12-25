@@ -1,0 +1,229 @@
+!
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Vasya</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-top">
+            <h2 class="header-title">header</h2>
+        </div>
+        <div class="header-center">
+            <h2 class="header-title">header</h2>
+            <p class="header-paragraph yellow">Something</p>
+        </div>
+        <div class="header-bottom">
+            <h2 class="header-title">header</h2>
+            <a class="header-link" href="#">link</a>
+            <a href="#"></a>
+            <a href="#"></a>
+            <a href="#"></a>
+            <a href="#"></a>
+        </div>
+        <ul>
+            <li>
+                <p></p>
+            </li>
+            <li>
+                <p></p>
+            </li>
+            <li>
+                <p></p>
+            </li>
+            <li>
+                <p></p>
+            </li>
+            <li>
+                <p></p>
+            </li>
+        </ul>           
+    </header>
+    <main>
+        <p>main content</p>
+    </main>
+    <footer>
+        <h2>footer</h2>
+    </footer>
+</body>
+
+</html>
+<meta name="keywords" content="вёрстка, компьютерная грамотность, программирование">
+    <meta name="description" content="Примеры того, что изучение веб-технологий может быть полезно для всех">
+
+
+
+
+
+
+    <ul>
+        <li><a href="3">Предыдущее задание</a></li>
+        <li><a href="..">Описание курса</a></li>
+        <li><a href="../../4">Курс «Знакомство»</a></li>
+      </ul>
+
+
+
+
+
+/* Предыдущий код
+body {
+  width: 350px;
+  margin: 0;
+  padding: 0 10px;
+
+  font-size: 14px;
+  font-family: "Arial", sans-serif;
+}
+
+.table {
+ border-collapse: collapse;
+ 
+}
+
+.col-head-1,
+.col-head-2,
+.col-head-3 {
+  width: 33%;
+  padding: 10px;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  color: white;
+  background-color: darkcyan;
+}
+
+.col-head-1 {
+ text-align: left; 
+}
+
+.col-head-2 {
+ text-align: center; 
+}
+
+.col-head-3 {
+ text-align: right; 
+}
+
+.col-light {
+  background-color: lightblue;
+}
+
+.col-1,
+.col-2,
+.col-3 {
+  padding: 10px;    
+}
+
+.col-1 {
+  text-align: left;
+}
+
+.col-2 {
+ text-align: center; 
+}
+
+.col-3 {
+  text-align: right; 
+}
+
+.row-3,
+.row-5 {
+ background-color: lightyellow; 
+ border-bottom: 1px solid lightgrey;
+}
+
+.row-2,
+.row-4 {
+  border-bottom: 1px solid lightgrey;
+}
+
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <title>Испытание: через тернии к звёздам</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="exam.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header class="page-header">Форма отзыва</header>
+    <main>
+      <form action="/echo" method="post" oninput="daysoutput.value=dayscount.value">
+        <fieldset>
+        <legend>Личные данные</legend>
+        <div class="half-width">
+          <label for="id">ID отзыва</label>
+          <input type="text" id="id" value="12345" disabled>
+        </div>
+        <div class="half-width">
+          <label for="name">Имя путешественника</label>
+          <input type="text" id="name" value="Кекс">
+        </div>
+        </fieldset>
+        <fieldset>
+        <legend>Отзыв о поездке</legend>
+        <div class="half-width">
+          <label for="country">Страна визита</label>
+          <input type="text" value="Норвегия" id="country" >
+        </div>
+        <div class="half-width">
+          <label for="city">Город</label>
+          <select type="text" id="city" >
+            <option selected>Осло</option>
+          </select>  
+        </div>
+        <div class="half-width">
+        <label for="rating">Оценка поездки</label>
+        <label> 0 <input type="range" id="dayscount" step="1" min="0" max="10" "> 10</label>
+        </div>
+        <div class="half-width output-area">
+          <output name="daysoutput"></output>
+        </div>
+        <label for="review">Текст отзыва</label>
+        <textarea type="text" id="review" rows="5">Это было просто мяу!
+        </textarea>
+        </fieldset>
+        <fieldset>
+        <legend>Оценка отеля</legend>
+        <div class="half-width">
+          <label for="hotel">Название отеля</label>
+          <input type="text" id="hotel" placeholder="Название по-английски" required>
+        </div>
+        <div class="half-width">
+          <label for="arrival_date">Дата въезда</label>
+          <input type="text" id="arrival_date" placeholder="В формате дд-мм-гггг" required>
+        </div>
+        <div class="one-third-width">
+          <label for="color">Цвет кроватки</label>
+          <input type="color" name="color">
+        </div>
+        <div class="two-third-width">
+          <label for="dish_rating">Оценка обедов</label>
+          <select type="text" id="dish_rating">
+            <option>Подушечки оближеш</option>
+            </select>
+        </div>
+        <label for="fish">Самая вкусная рыба</label>
+        <select type="text" id="fish" multiple size="5"
+        rows="5">
+            <option selected>Норвежский лосось</option>
+            <option>Зубатка</option>
+            <option selected>Морской окунь</option>
+            <option>Карась</option>
+            <option>Зеркальный карп</option>
+            </select>
+            </fieldset>
+            
+        <div class="buttons">
+         <input type="submit">
+         <input type="reset">
+        </div>
+      </form>
+    </main>
+    <footer class="page-footer"></footer>
+  </body>
+</html>
