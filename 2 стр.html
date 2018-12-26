@@ -23,30 +23,32 @@
     </header>
     <main class="page-main">
         <section class="navigation-house">
+        <form>   
         <fieldset class="infrastructure">
-         <p class="text-infrastructure"><b>Инфраструктура:</b></p>
+         <legend class="text-infrastructure"><b>Инфраструктура:</legend>
         <ul class="list-infrastructure">
-            <li class="pool"><input type="checkbox" name="pool">Бассейн</li>
-            <li class="parking"><input type="checkbox" name="parking">Парковка</li>
-            <li class="Wi-fi"><input type="checkbox" name="Wi-fi">Wi-fi</li>
+            <li class="pool"><input type="checkbox" name="pool"><label > Бассейн</label></li>
+            <li class="parking"><input type="checkbox" name="parking"><label > Парковка</label></li>
+            <li class="Wi-fi"><input type="checkbox" name="Wi-fi"><label > Wi-fi</label></li>
         </ul>
         </fieldset>
         <fieldset class="housing">
             <ul class="list-housing">
-                <p class="text-housing"><b>Тип жилья:</b></p>
-                <li class="hotel"><input type="checkbox" name="hotel">Гостиница</li>
-                <li class="motel"><input type="checkbox" name="motel">Мотель</li>
-                <li class="apartments"><input type="checkbox" name="apartments">Аппартаменты</li>
+                <legend class="text-housing">Тип жилья:</legend>
+                <li class="hotel"><input type="checkbox" name="hotel"><label>Гостиница</label></li>
+                <li class="motel"><input type="checkbox" name="motel"><label>Мотель</label></li>
+                <li class="apartments"><input type="checkbox" name="apartments"><label>Аппартаменты</label></li>
             </ul>
         </fieldset>
         <div class="cost">
         <fieldset class="form-cost"> 
-           <p class="text-cost">Стоимость в сутки(Р):</p>           
+           <legend class="text-cost">Стоимость в сутки(Р):</legend>           
         </fieldset>
         <input type="button">
         </div>
+        </form>
         </section>
-        <section class="main-result">
+        <section class="main-hotels">
         <div class="found">
             <form class="item-found">
                <input type="text" disabled> 
@@ -62,54 +64,55 @@
             <input type="image" src="#" alt="треуголник">
             <input type="image" src="#" alt="треуголник">  
             </div>
-        
-        
-            <ul class="search-result">
-                <li class="result-var">
+            <ul class="hotels-list">
+                <li class="hotels-item">
                 <img src="#" alt="Amara Resort & Spa">
                 <div>
-                <h2 class="result-name "> Amara Resort & Spa</h2>
+                <p class="result-name "><b> Amara Resort & Spa</b></p>
                 <p class="result-description ">гостиница от 4000 Р  </p>
                 </div>
                 <div class="result-button">
                   <input type="button" name="more" value="Подробнее">
                   <input type="submit" name="booking" value="Забронировать">
                 </div>
-                <div class="star">
+                <div class="hotel-stars">
                     <div class="star"></div>
                     <div class="star"></div>
                     <div class="star"></div>
                     <div class="star"></div>
-                    <p class="rate">Рэйтинг: 8,5</p>
+                    <label class="rate">Рейтинг:</label>
+                    <input type="text" disabled value="8,5">
                 </div>
                 </li>
-                <li class="result-var">
+                <li class="hotels-item">
                 <img src="#" alt="Desert Quail Inn">
-                <h2 class="result-name ">Desert Quail Inn</h2>
+                <p class="result-name "><b>Desert Quail Inn</b></p>
                 <p class="result-description ">Мотель от 3000 Р</p>
                 <div class="result-button">
                   <input type="submit" name="booking" value="Забронировать">
                   <input type="button" name="more" value="Подробнее">
                 </div>
-                <div class="star">
+                <div class="hotel-stars">
                     <div class="star"></div>
                     <div class="star"></div>
                     <div class="star"></div>
-                    <p class="rate">Рэйтинг:8,9</p>
+                    <label class="rate">Рейтинг:</label>
+                    <input type="text" disabled value="8,9">
                 </div>
                 </li>
-                <li class="result-var">
+                <li class="hotels-item">
                 <img src="#" alt="Amara Resort & Spa">
-                <h2 class="result-name ">Villas At Poco Diablo</h2>
+                <p class="result-name "><b>Villas At Poco Diablo</b></p>
                 <p class="result-description ">Аппартаменты от 2000 Р</p>
                 <div class="button-var">
                   <input type="button" name="more" value="Подробнее">
                   <input type="submit" name="booking" value="Забронировать">
                 </div>
-                <div class="star">
+                <div class="hotel-stars">
                     <div class="star"></div>
                     <div class="star"></div>
-                    <p class="rate">Рэйтинг:9,2</p>
+                    <label class="rate">Рейтинг:</label>
+                    <input type="text" disabled value="9,2"> 
                 </div>
                 </li>
             </ul>
